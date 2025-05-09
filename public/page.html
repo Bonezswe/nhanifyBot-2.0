@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nhanify | Page</title>
+
+    <!-- Add tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="flex flex-col min-h-dvh bg-blue-900">
+    <div id="header" class="sticky top-0 flex flex-col gap-4 w-full px-4 py-2 bg-blue-950">
+        <div class="flex items-center justify-between">
+            <img class="h-10 w-10" src="https://avatar.iran.liara.run/username?username=Nhan" alt="logo" />
+
+            <button class="cursor-pointer font-bold text-blue-400 opacity-50 hover:opacity-100">
+                Sign in
+            </button>
+        </div>
+        <div>
+            <a class="font-bold text-blue-400 opacity-50 hover:opacity-100" href="/anon/public">
+                Public Playlists
+            </a>
+        </div>
+    </div>
+
+    <main class="flex flex-col grow items-center justify-center gap-8">
+
+        PAGE 2
+    </main>
+
+    <footer class="flex p-4 bg-blue-950">
+        <small id="copyright" class="text-stone-200">
+            Nhanify &copy; <span id="copy-date"></span>
+        </small>
+    </footer>
+    <script type="text/javascript" src="./assets/dom.js"></script>
+    <script type="text/javascript" src="./assets/iframeAPI.js"></script>
+    <script type="text/javascript" src="./assets/socket.js"></script>
+
+    <script type="text/javascript" src="./assets/copyright.js"></script>
+</body>
+
+</html>

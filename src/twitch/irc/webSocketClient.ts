@@ -23,6 +23,7 @@ export async function startTwitchIRCWebSocketClient(IRC_WEBSOCKET_URL: string, c
     client.send(`NICK ${auth.TWITCH_ACCOUNT}`);//nhanifybot
     client.send(`JOIN #${auth.TWITCH_CHANNEL}`);//nhancodes
   });
+
   client.on("message", async function (event: Buffer) {
     const message = event.toString('utf8').normalize("NFKC").replace(/\uDB40\uDC00/g, "").trim();
     if (message.startsWith('PING :tmi.twitch.tv')) {

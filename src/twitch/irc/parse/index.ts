@@ -1,5 +1,5 @@
-export { parseTags } from "./tags.js";
+export { parseTags } from "./tags";
 export { parseMessage } from "./message.js";
-export { parseCommand } from "./command.js";
-export { parseSource } from "./source.js";
-export { parseParameters } from "./parameters.js";
+export { parseCommand } from "./command";
+export { parseSource } from "./source";
+export { parseParameters } from "./command";
